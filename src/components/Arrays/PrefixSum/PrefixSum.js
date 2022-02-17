@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-class PrefixSum extends Component{
-    render(){
+import React from 'react';
+import UIConstants from '../../Constants/UIConstants';
+import CommonInfoContainer from '../../Common/CommonInfoContainer';
+
+function PrefixSum(){
         return(
-            <div>
-                <h1>Prefix Sum</h1>
-            </div>
+            <CommonInfoContainer
+                topicName={UIConstants.topicNames.PREFIXSUM}
+                topicDescription={UIConstants.topicDescriptions.PREFIXSUM}
+            />
         );
-    }
 }
 export default PrefixSum;
