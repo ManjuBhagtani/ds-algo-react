@@ -6,7 +6,7 @@ function ProblemContainer({problems}){
             <h4>Problems</h4>
             <Accordion className="pt-2">
                 {problems?.map((problem, i) => 
-                    <Accordion.Item eventKey="0" className='mb-2' key={i}>
+                    <Accordion.Item eventKey={i} className='mb-2' key={i}>
                         <Accordion.Header><a href={problem?.link} className="text-decoration-none">{problem?.questionTitle}</a></Accordion.Header>
                         <Accordion.Body>
                             <div>
