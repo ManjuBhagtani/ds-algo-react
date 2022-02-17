@@ -1,5 +1,8 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink } from '@fortawesome/fontawesome-free-solid'
+
 function ProblemContainer({problems}){
     return(
         <div className="mt-4" style={{paddingLeft: '50px'}}>
@@ -7,7 +10,7 @@ function ProblemContainer({problems}){
             <Accordion className="pt-2">
                 {problems?.map((problem, i) => 
                     <Accordion.Item eventKey={i} className='mb-2' key={i}>
-                        <Accordion.Header><a href={problem?.link} className="text-decoration-none">{problem?.questionTitle}</a></Accordion.Header>
+                        <Accordion.Header>{problem?.questionTitle}<pre>  </pre><a href={problem?.link} target="_blank" rel="noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faLink} /></a></Accordion.Header>
                         <Accordion.Body>
                             <div>
                                 {problem?.questionDesc}
