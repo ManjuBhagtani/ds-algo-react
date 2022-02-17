@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-class CarryForward extends Component{
-    render(){
+import React from 'react';
+import UIConstants from '../../Constants/UIConstants';
+import ProblemContainer from '../../Common/ProblemContainer';
+
+function CarryForward(){
         return(
-            <div>
-                <h1>Carry Forward</h1>
+            <div className="p-3">
+                <ProblemContainer
+                    problems={UIConstants.problems.CARRYFORWARD}
+                />
             </div>
         );
-    }
 }
 export default CarryForward;
