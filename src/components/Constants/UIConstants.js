@@ -58,7 +58,32 @@ const UIConstants = {
                 }
             ],
             link: "https://www.scaler.com/academy/mentee-dashboard/class/17015/assignment/problems/12826?navref=cl_tt_lst_sl"
-        }]
+        },
+        {
+            questionTitle: "Count ways to make sum of odd and even indexed elements equal by removing an array element",
+            questionDesc: "Given an array, arr[] of size N, the task is to find the count of array indices such that removing an element from these indices makes the sum of even-indexed and odd-indexed array elements equal.",
+            note: "Array indexing starts from 0. If there is no equilibrium index then return -1. If there are more than one equilibrium indexes then return the minimum index.",
+            constraints: [
+                {constraint: "1<=n<=1e5"}, 
+                {constraint: "-1e5<=A[i]<=1e5"}
+            ],
+            inputFormat: "First argument contains an array A of integers of size N",
+            outputFormat: "Return the count of array indices such that removing an element from these indices makes the sum of even-indexed and odd-indexed array elements equal.",
+            examples: [
+                {
+                    input: "A=[2, 1, 6, 4]",
+                    output: "1",
+                    explanation: "Removing arr[1] from the array modifies arr[] to { 2, 6, 4 } such that, arr[0] + arr[2] = arr[1]. Therefore, the required output is 1."
+                },
+                {
+                    input: "A=[1, 1, 1]",
+                    output: "3",
+                    explanation: " Removing arr[0] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1]. Removing arr[1] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1]. Removing arr[2] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1]. Therefore, the required output is 3."
+                }
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17015/assignment/problems/12826?navref=cl_tt_lst_sl"
+        }
+    ]
     }
 }
 
