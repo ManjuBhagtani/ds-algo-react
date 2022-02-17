@@ -81,7 +81,32 @@ const UIConstants = {
                     explanation: " Removing arr[0] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1]. Removing arr[1] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1]. Removing arr[2] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1]. Therefore, the required output is 3."
                 }
             ],
-            link: "https://www.scaler.com/academy/mentee-dashboard/class/17015/assignment/problems/12826?navref=cl_tt_lst_sl"
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17015/assignment/problems/12828?navref=cl_tt_nv"
+        },
+        {
+            questionTitle: "Pick from both sides!",
+            questionDesc: "Given an integer array A of size N. You can pick B elements from either left or right end of the array A to get maximum sum. Find and return this maximum possible sum.",
+            note: " Suppose B = 4 and array A contains 10 elements then, you can pick first four elements or can pick last four elements or can pick 1 from front and 3 from back etc . you need to return the maximum possible sum of elements you can pick.",
+            constraints: [
+                {constraint: "1<=n<=1e5"}, 
+                {constraint: "1 <= B <= N"},
+                {constraint: "-10^3 <= A[i] <= 10^3"}
+            ],
+            inputFormat: "First argument is an integer array A. Second argument is an integer B.",
+            outputFormat: "Return an integer denoting the maximum possible sum of elements you picked.",
+            examples: [
+                {
+                    input: "A = [5, -2, 3 , 1, 2]  B = 3",
+                    output: "8",
+                    explanation: " Pick element 5 from front and element (1, 2) from back so we get 5 + 1 + 2 = 8"
+                },
+                {
+                    input: "A = [1, 2]  B = 1",
+                    output: "2",
+                    explanation: "  Pick element 2 from end as this is the maximum we can get"
+                }
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17015/assignment/problems/9900?navref=cl_tt_nv"
         }
     ]
     }
