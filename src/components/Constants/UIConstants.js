@@ -108,7 +108,77 @@ const UIConstants = {
             ],
             link: "https://www.scaler.com/academy/mentee-dashboard/class/17015/assignment/problems/9900?navref=cl_tt_nv"
         }
-    ]
+    ],
+    CARRYFORWARD: [{
+            questionTitle: "Special Subsequences \"AG\"",
+            questionDesc: "You have given a string A having Uppercase English letters. You have to find that how many times subsequence \"AG\" is there in the given string.",
+            note: "Return the answer modulo 10^9 + 7 as the answer can be very large.",
+            constraints: [
+                {constraint: "1 <= length(A) <= 10^5"},
+            ],
+            inputFormat: "First and only argument is a string A.",
+            outputFormat: "Return an integer denoting the answer.",
+            examples: [
+                {
+                    input: " A = \"ABCGAG\"",
+                    output: "3",
+                    explanation: " Subsequence \"AG\" is 3 times in given string "
+                },
+                {
+                    input: " A = \"GAB\"",
+                    output: "0",
+                    explanation: "There is no subsequence \"AG\" in the given string."
+                }
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17256/assignment/problems/1247?navref=cl_tt_lst_nm"
+        },
+        {
+            questionTitle: "Closest MinMax",
+            questionDesc: "Given an array A. Find the size of the smallest subarray such that it contains atleast one occurrence of the maximum value of the array and atleast one occurrence of the minimum value of the array.",
+            note: "Return the answer modulo 10^9 + 7 as the answer can be very large.",
+            constraints: [
+                {constraint: "1 <= |A| <= 2000"},
+            ],
+            inputFormat: "First and only argument is vector A",
+            outputFormat: "Return the length of the smallest subarray which has atleast one occurrence of minimum and maximum element of the array",
+            examples: [
+                {
+                    input: "A = [1, 3]",
+                    output: "2",
+                    explanation: "Only choice is to take both elements. "
+                },
+                {
+                    input: "A = [2]",
+                    output: "1",
+                    explanation: "Take the whole array."
+                }
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17256/assignment/problems/986?navref=cl_tt_lst_sl"
+        },
+        {
+            questionTitle: "Leaders in an array",
+            questionDesc: "Given an integer array A containing N distinct integers, you have to find all the leaders in the array A. An element is leader if it is strictly greater than all the elements to its right side.",
+            note: "The rightmost element is always a leader.",
+            constraints: [
+                {constraint: "1 <= N <= 10^5"},
+                {constraint: "1 <= A[i] <= 10^8"}
+            ],
+            inputFormat: "First and only argument is an integer array A.",
+            outputFormat: "Return an integer array denoting all the leader elements of the array. NOTE: Ordering in the output doesn't matter.",
+            examples: [
+                {
+                    input: "A = [16, 17, 4, 3, 5, 2]",
+                    output: "[17, 2, 5]",
+                    explanation: "Element 17 is strictly greater than all the elements on the right side to it. Element 2 is strictly greater than all the elements on the right side to it. Element 5 is strictly greater than all the elements on the right side to it. So we will return this three elements i.e [17, 2, 5], we can also return [2, 5, 17] or [5, 2, 17] or any other ordering."
+                },
+                {
+                    input: "A = [1, 2]",
+                    output: "[2]",
+                    explanation: "Only 2 the rightmost element is the leader in the array."
+                }
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17256/homework/problems/11921?navref=cl_tt_nv"
+        }]
     }
 }
 
