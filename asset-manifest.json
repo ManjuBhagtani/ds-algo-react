@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/ds-algo-react/static/css/main.23da64fd.css",
-    "main.js": "/ds-algo-react/static/js/main.3a0e0858.js",
+    "main.js": "/ds-algo-react/static/js/main.efe67ef4.js",
     "static/js/787.f6bfe8ad.chunk.js": "/ds-algo-react/static/js/787.f6bfe8ad.chunk.js",
+    "static/media/Bits_1.pdf": "/ds-algo-react/static/media/Bits_1.825b5e8268b1cf6be486.pdf",
     "static/media/Arrays__Prefix_Sum..pdf": "/ds-algo-react/static/media/Arrays__Prefix_Sum..3b72d586ce5440a8dec0.pdf",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/ds-algo-react/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/ds-algo-react/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -11,11 +12,11 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ds-algo-react/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/ds-algo-react/index.html",
     "main.23da64fd.css.map": "/ds-algo-react/static/css/main.23da64fd.css.map",
-    "main.3a0e0858.js.map": "/ds-algo-react/static/js/main.3a0e0858.js.map",
+    "main.efe67ef4.js.map": "/ds-algo-react/static/js/main.efe67ef4.js.map",
     "787.f6bfe8ad.chunk.js.map": "/ds-algo-react/static/js/787.f6bfe8ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23da64fd.css",
-    "static/js/main.3a0e0858.js"
+    "static/js/main.efe67ef4.js"
   ]
 }
