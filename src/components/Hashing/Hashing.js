@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-class Hashing extends Component{
-    render(){
+import React from 'react';
+import UIConstants from '../Constants/UIConstants';
+import ProblemContainer from '../Common/ProblemContainer';
+
+function Hashing(){
         return(
-            <div>
-                <h1>Hashing</h1>
+            <div className="p-3">
+                <ProblemContainer
+                    problems={UIConstants.problems.HASHING}
+                />
             </div>
         );
-    }
 }
 export default Hashing;
