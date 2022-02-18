@@ -11,19 +11,22 @@ function CommonInfoContainer({topicName, topicDescription, notesFileName, notesF
             </h2>
             <Container fluid className='p-5 pt-0 pb-0'>
                 
-                {topicDescription.meaning && <p>{topicDescription.meaning}</p>}
-                {topicDescription.desc && <p>{topicDescription.desc}</p>}
-                {topicDescription.formula && 
+                {topicDescription?.meaning && <p>{topicDescription.meaning}</p>}
+                {topicDescription?.desc && <p>{topicDescription.desc}</p>}
+                {topicDescription?.formula && 
                     <div className='mt-2 bg-light rounded border p-2'>
                         <b>{topicDescription.formula}</b>
                     </div>
                 }
-                {topicDescription.applications && 
-                    <h4 className='mt-4'>Applications</h4>}
-                    {topicDescription.applications.map((application, i) =>
-                        <li key={i}>{application}</li> 
-                    )}
-                {topicDescription.complexity &&
+                {topicDescription?.applications && 
+                    <>
+                        <h4 className='mt-4'>Applications</h4>
+                        {topicDescription?.applications.map((application, i) =>
+                            <li key={i}>{application}</li> 
+                        )}
+                    </>
+                }
+                {topicDescription?.complexity &&
                     <>
                         <h4 className='mt-4'>Complexity</h4>
                         <p className='mt-3'><b>Time Complexity:</b> {topicDescription.complexity.timeComplexity}</p>
