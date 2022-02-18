@@ -1,17 +1,21 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/fontawesome-free-solid'
 
-function CommonInfoContainer({topicName, topicDescription}){
+function CommonInfoContainer({topicName, topicDescription, notesFileName, notesFile}){
         return(
             <>
-            <h2 className='p-3'>{topicName}</h2>
+            <h2 className='p-3'>
+                {topicName} <a href={notesFile}  rel="noreferrer" className="text-decoration-none"><FontAwesomeIcon icon={faDownload} /></a>
+            </h2>
             <Container fluid className='p-5 pt-0 pb-0'>
                 
                 {topicDescription.meaning && <p>{topicDescription.meaning}</p>}
                 {topicDescription.desc && <p>{topicDescription.desc}</p>}
                 {topicDescription.formula && 
-                    <div className='mt-2'>
-                        <span className='bg-light rounded border p-2'><b>{topicDescription.formula}</b></span>
+                    <div className='mt-2 bg-light rounded border p-2'>
+                        <b>{topicDescription.formula}</b>
                     </div>
                 }
                 {topicDescription.applications && 
