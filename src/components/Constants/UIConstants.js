@@ -29,7 +29,11 @@ const UIConstants = {
         SUBARRAYS : "Subarrays",
         SUBSEQUENCESANDSUBSETS: "Subsequences And Subsets",
         HASHING: "Hashing",
-        BITMANIPULATION: "Bit Manipulation",
+        BITMANIPULATION: {
+            meaning: "Bit manipulation is the process of applying logical operations on a sequence of bits to achieve a required result. It is an act of algorithmically manipulating bits or other pieces of data that are shorter than a word.",
+            desc: "Bit manipulation is something that has constant time complexity.",
+
+        },
         STRINGS: "Strings",
 
     },
@@ -575,11 +579,116 @@ const UIConstants = {
             ],
             link: "https://www.scaler.com/academy/mentee-dashboard/class/18124/homework/problems/176?navref=cl_tt_lst_sl"
         },
+    ],
+    BITMANIPULATION: [
+        {
+            questionTitle: "Single Number",
+            questionDesc: "Given an array of integers A, every element appears twice except for one. Find that single one.",
+            note: "Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?",
+            constraints: [
+                {constraint: "2 <= |A| <= 2000000"},
+                {constraint: "0 <= A[i] <= INTMAX"},
+            ],
+            inputFormat: "First and only argument of input contains an integer array A.",
+            outputFormat: "Return a single integer denoting the single element.",
+            examples: [
+                {
+                    input: " A = [1, 2, 2, 3, 1]",
+                    output: "3",
+                    explanation: "3 occurs once."
+                },
+                {
+                    input: "A = [1, 2, 2]",
+                    output: "1",
+                    explanation: "1 occurs once."
+                },
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17617/assignment/problems/193?navref=cl_tt_lst_sl"
+        },
+        {
+            questionTitle: "Add Binary Strings",
+            questionDesc: "Given two binary strings, return their sum (also a binary string).",
+            examples: [
+                {
+                    input: "a = \"100\", b = \"11\"",
+                    output: "\"111\"",
+                },
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17617/assignment/problems/189?navref=cl_tt_nv"
+        },
+        {
+            questionTitle: "Number of 1 Bits",
+            questionDesc: "Write a function that takes an integer and returns the number of 1 bits it has.",
+            constraints: [
+                {constraint: "1 <= A <= 10^9"},
+            ],
+            inputFormat: "First and only argument contains integer A",
+            outputFormat: "Return an integer as the answer",
+            examples: [
+                {
+                    input: "11",
+                    output: "3",
+                    explanation: "11 is represented as 1011 in binary."
+                },
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17617/homework/problems/192?navref=cl_tt_lst_sl"
+        },
+        {
+            questionTitle: "Interesting Array",
+            questionDesc: "You have an array A with N elements. We have 2 types of operation available on this array : 1. We can split a element B into 2 elements C and D such that B = C + D. 2. We can merge 2 elements P and Q as one element R such that R = P^Q i.e XOR of P and Q. You have to determine whether it is possible to make array A containing only 1 element i.e. 0 after several splits and/or merge?",
+            constraints: [
+                {constraint: "1 <= N <= 100000"},
+                {constraint: "1 <= A[i] <= 10^6"},
+            ],
+            inputFormat: "The first argument is an integer array A of size N.",
+            outputFormat: "Return \"Yes\" if it is possible otherwise return \"No\".",
+            examples: [
+                {
+                    input: "A = [9, 17]",
+                    output: " Yes",
+                    explanation: "Following is one possible sequence of operations -   1) Merge i.e 9 XOR 17 = 24   2) Split 24 into two parts each of size 12   3) Merge i.e 12 XOR 12 = 0. As there is only 1 element i.e 0. So it is possible."
+                },
+                {
+                    input: "A = [1]",
+                    output: " No",
+                    explanation: "There is no possible way to make it 0."
+                },
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17617/homework/problems/1085?navref=cl_tt_nv"
+        },
+        {
+            questionTitle: "Reverse Bits",
+            questionDesc: "Reverse the bits of an 32 bit unsigned integer A.",
+            constraints: [
+                {constraint: "0 <= A <= 2^32"},
+            ],
+            inputFormat: "First and only argument of input contains an integer A.",
+            outputFormat: "Return a single unsigned integer denoting the decimal value of reversed bits.",
+            examples: [
+                {
+                    input: "0",
+                    output: "0",
+                    explanation: "00000000000000000000000000000000    =>      00000000000000000000000000000000"
+                },
+                {
+                    input: "3",
+                    output: "3221225472",
+                    explanation: "00000000000000000000000000000011    =>      11000000000000000000000000000000"
+                },
+            ],
+            link: "https://www.scaler.com/academy/mentee-dashboard/class/17617/homework/problems/191?navref=cl_tt_nv"
+        }
     ]
     },
 
     notesFileNames: {
         PREFIXSUM: "Arrays_PrefixSum",
+        CARRYFORWARD: "Arrays_CarryForward",
+        SUBARRAYS: "Arrays_Subarrays",
+        SUBSEQUENCESANDSUBSETS: "Arrays_SubsequencesAndSubsets",
+        BITMANIPULATION: "BitManipulation",
+        STRINGS: "Strings",
+        HASHING: "Hashing",
     }
 }
 
