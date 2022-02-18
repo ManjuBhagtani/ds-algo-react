@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-class Strings extends Component{
-    render(){
+import React from 'react';
+import UIConstants from '../Constants/UIConstants';
+import ProblemContainer from '../Common/ProblemContainer';
+
+function Strings(){
         return(
-            <div>
-                <h1>Strings</h1>
+            <div className="p-3">
+                <ProblemContainer
+                    problems={UIConstants.problems.STRINGS}
+                />
             </div>
         );
-    }
 }
+
 export default Strings;
