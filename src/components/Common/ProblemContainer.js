@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink } from '@fortawesome/fontawesome-free-solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink } from '@fortawesome/fontawesome-free-solid';
 
 function ProblemContainer({problems}){
     return(
