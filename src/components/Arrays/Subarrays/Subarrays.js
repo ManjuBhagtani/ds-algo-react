@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-class Subarrays extends Component{
-    render(){
+import React from 'react';
+import UIConstants from '../../Constants/UIConstants';
+import ProblemContainer from '../../Common/ProblemContainer';
+
+function Subarrays(){
         return(
-            <div>
-                <h1>Subarrays</h1>
+            <div className="p-3">
+                <ProblemContainer
+                    problems={UIConstants.problems.SUBARRAYS}
+                />
             </div>
         );
-    }
 }
+
 export default Subarrays;
