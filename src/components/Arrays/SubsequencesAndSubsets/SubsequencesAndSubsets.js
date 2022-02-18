@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-class SubsequencesAndSubsets extends Component{
-    render(){
+import React from 'react';
+import UIConstants from '../../Constants/UIConstants';
+import ProblemContainer from '../../Common/ProblemContainer';
+
+function SubsequencesAndSubsets(){
         return(
-            <div>
-                <h1>Subsequences And Subsets</h1>
+            <div className="p-3">
+                <ProblemContainer
+                    problems={UIConstants.problems.SUBSEQUENCESANDSUBSETS}
+                />
             </div>
         );
-    }
 }
+
 export default SubsequencesAndSubsets;
